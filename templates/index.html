@@ -1,0 +1,106 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body style="background-color: rgb(136, 219, 147);">
+
+    <h1>LOAN RECOVERY PREDICTION</h1>
+
+    <form method="GET" action ="/predict_loan">
+
+
+        <label>Credit Policy&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;</label>
+        <input type = "text" name = "credit_policy">
+        </select>
+       
+        <br>
+        <label>Interest Rate&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;</label>
+        <input type = "text" name = "int_rate">
+        </select>
+       
+        <br>
+        <label>Installment&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;</label>
+        <input type = "text" name = "installment">
+        </select>
+       
+        <br>
+        <br>
+        <label>Log annual Incame&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;</label>
+        <input type = "text" name = "log_annual_inc">
+        </select>
+       
+        <br>
+        <label>DTI&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;</label>
+        <input type = "text" name = "dti">
+        </select>
+       
+        <br>
+        <label>FICO Score&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;</label>
+        <input type = "text" name = "fico">
+        </select>
+       
+        <br>
+        <br>
+        <label>Day with CR Line&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;</label>
+        <input type = "text" name = "day_with_cr_line">
+        </select>
+       
+        <br>
+        <label>Revol Balance&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;</label>
+        <input type = "text" name = "revol_bal">
+        </select>
+       
+        <br>
+
+       <label>Revol Util&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;</label>
+        <input type = "text" name = "revol_util">
+        </select>
+       
+        <br>
+        <br>
+        <label>Inquiry Last 6 Months&nbsp;:&nbsp;</label>
+        <input type = "text" name = "inq_last_6mths">
+        </select>
+       
+        <br>
+
+        <label>Delinq In 2y Years&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;</label>
+        <input type = "text" name = "delinq_2yrs">
+        </select>
+       
+        <br>
+
+        <label>Public Records&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;</label>
+        <input type = "text" name = "pub_rec">
+        </select>
+       
+        <br>
+        <br>
+        <label>Purpose&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;</label>
+        <label for = "purpose">
+        <select name = "purpose" id="purpose">
+                <option value = "debt_consolidation">Debt Consolidation</option>
+                <option value = "credit_card">Credit Card</option>
+                <option value = "home_improvement">Home Improvement</option>
+                <option value = "small_business">Small Business</option>
+                <option value = "educational">Educational</option>
+        </select>
+       
+        <br>
+        <br>
+        <br>
+        <input type = "submit" value = "SUBMIT">
+ 
+        <br>
+        <p> <b> {{prediction}} </b></p>
+   
+
+    </form>
+   
+</body>
+</html>
+
